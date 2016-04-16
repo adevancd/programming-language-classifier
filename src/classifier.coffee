@@ -89,4 +89,4 @@ class Classifier
   _language_probability = (db, language) ->
     Math.log(parseFloat(db['languages'][language]) / parseFloat(db['languages_total']))
 
-module.exports = new Classifier()
+module.exports = Classifier
